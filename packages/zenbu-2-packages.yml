@@ -1,0 +1,58 @@
+generated: '2026-07-21'
+method: searched
+source: npm registry search (github.com/zenbu-labs/zenbu.js) + tryzenbu.dev docs
+name: Zenbu Packages
+description: >-
+  First-party npm packages published by Zenbu Labs for the Zenbu.js hackable
+  application framework and the Zenbu desktop app scaffolding. Zenbu ships no
+  hosted HTTP API or server SDKs; these are client-side framework, tooling, and
+  UI packages. Third-party packages under the unrelated @zenbu-ui/* scope
+  (KodepandaID) and zenbuapps/zenbu-site are intentionally excluded.
+registry: npm
+packages:
+- name: create-zenbu-app
+  registry: npm
+  url: https://www.npmjs.com/package/create-zenbu-app
+  version: 0.0.37
+  license: MIT
+  language: TypeScript
+  official: true
+  kind: cli-scaffolder
+  repository: https://github.com/zenbu-labs/zenbu.js
+  description: Scaffold a new Zenbu (hackable) app. Invoked via `npm create zenbu-app`.
+- name: create-desktop-app
+  registry: npm
+  url: https://www.npmjs.com/package/create-desktop-app
+  version: 0.1.5
+  license: MIT
+  language: TypeScript
+  official: true
+  kind: cli-scaffolder
+  repository: https://github.com/zenbu-labs/zenbu.js
+  description: >-
+    Scaffold a new desktop app. Marketing wrapper around create-zenbu-app for the
+    Zenbu.js + patched-Electron desktop shell.
+- name: '@zenbujs/hmr'
+  registry: npm
+  url: https://www.npmjs.com/package/@zenbujs/hmr
+  version: 0.0.2
+  license: ISC
+  language: TypeScript
+  official: true
+  kind: library
+  repository: https://github.com/zenbu-labs/zenbu.js
+  description: >-
+    Hot module replacement for Zenbu — a heavily modified fork of dynohot,
+    powering runtime plugin hot-reloading in the framework.
+- name: '@zenbujs/ui'
+  registry: npm
+  url: https://www.npmjs.com/package/@zenbujs/ui
+  version: 0.1.0
+  license: MIT
+  language: TypeScript
+  official: true
+  kind: ui-primitives
+  repository: https://github.com/zenbu-labs
+  description: >-
+    Shared UI primitives for the hackable-gui host (includes shadcn/ui
+    components) used when building Zenbu apps and plugins.

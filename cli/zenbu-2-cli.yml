@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: npm registry (create-zenbu-app / create-desktop-app) + zenbulabs.mintlify.app quickstart
+name: Zenbu CLI Scaffolders
+description: >-
+  Zenbu does not ship a single hosted-service CLI; its command-line surface is a
+  pair of npm `create-*` scaffolders that bootstrap a new hackable Zenbu.js app or
+  desktop app. The generated project is then developed and hot-reloaded locally.
+type: scaffolder
+binaries:
+- name: create-zenbu-app
+  invoke: npm create zenbu-app
+  package: create-zenbu-app
+  version: 0.0.37
+  purpose: Scaffold a new Zenbu.js hackable application project.
+- name: create-desktop-app
+  invoke: npm create desktop-app
+  package: create-desktop-app
+  version: 0.1.5
+  purpose: >-
+    Scaffold a new Zenbu.js desktop app (Electron shell). Marketing wrapper around
+    create-zenbu-app.
+install:
+- method: npm
+  command: npm create zenbu-app
+- method: npm
+  command: npm create desktop-app
+docs: https://zenbulabs.mintlify.app/quickstart
+notes: >-
+  Binaries are distributed via npm (see packages/zenbu-2-packages.yml). There is
+  no authenticated API CLI because Zenbu exposes no hosted HTTP API.

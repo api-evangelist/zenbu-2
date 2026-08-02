@@ -1,7 +1,30 @@
 aid: zenbu-2
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zenbu-2.png
 name: Zenbu 2
-description: Zenbu 2 is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Zenbu is a Y Combinator (Spring 2026) developer-tools startup building a fully
+  hackable desktop interface for managing AI coding agents. The macOS app is a
+  customizable client for the "Pi" coding agent, letting developers run multiple
+  agents in parallel across Git worktrees, review changes, and extend the app at
+  runtime through plugins. Zenbu is built on Zenbu.js, the company's open-source
+  TypeScript framework for building extensible ("hackable") applications, which
+  handles plugin loading, cross-process state sync, RPC, and hot reloading. The
+  framework and its scaffolding tooling are published to npm under the zenbu-labs
+  organization. Zenbu does not currently expose a hosted HTTP/REST developer API;
+  its developer surface is the client-side Zenbu.js framework, its plugin model,
+  and its command-line scaffolders. Founded by Rob Pruzan (ex-Vercel Next.js core,
+  co-author of React Scan).
 url: https://raw.githubusercontent.com/api-evangelist/zenbu-2/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,51 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Developer Tools
+- AI Coding Agents
+- Frameworks
+- SDK
+- Open Source
+- Desktop Application
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/zenbu-2-domain-security.yml
+- type: Website
+  url: https://tryzenbu.dev/
+- type: DeveloperPortal
+  url: https://tryzenbu.dev/
+- type: Documentation
+  url: https://zenbulabs.mintlify.app/introduction
+- type: Quickstart
+  url: https://zenbulabs.mintlify.app/quickstart
+- type: SourceCode
+  url: https://zenbujs.dev
+- type: GitHubOrganization
+  url: https://github.com/zenbu-labs
+- type: Changelog
+  url: https://zenbulabs.mintlify.app/changelog/overview
+- type: Support
+  url: https://discord.gg/t3jzHHfc6z
+- type: LLMsTxt
+  url: llms/zenbu-2-llms.txt
+- type: Packages
+  url: packages/zenbu-2-packages.yml
+- type: SDKs
+  url: packages/zenbu-2-packages.yml
+- type: CLI
+  url: cli/zenbu-2-cli.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
